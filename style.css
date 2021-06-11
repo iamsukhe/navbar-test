@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+}
+
+.link{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+@media (max-width:800px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .link{
+        margin-left: 0px;
+        height: 0px;
+        display: flex;
+        align-items: unset;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .show-links {
+        height: 5rem;
+      }
+    .nav-toggle{
+        height: 30px;
+        display: block;
+        font-size: 1.5rem;
+    }   
+}
